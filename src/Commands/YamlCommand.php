@@ -91,7 +91,7 @@ class YamlCommand extends BaseCommand
 
         $dumper = new DumpCommand();
 
-        $dumper->run($input, $output);
+        $dumper->run(new StringInput(''), $output);
     }
 
     private function restoreComposerJson()
