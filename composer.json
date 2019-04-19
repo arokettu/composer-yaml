@@ -2,7 +2,8 @@
     "name": "sandfoxme/composer-yaml",
     "type": "composer-plugin",
     "license": "MIT",
-    "description": "Yaml support plugin for composer",
+    "description": "YAML support plugin for composer",
+    "homepage": "https://sandfox.dev/composer-yaml.html",
     "keywords": [
         "composer",
         "composer plugin",
