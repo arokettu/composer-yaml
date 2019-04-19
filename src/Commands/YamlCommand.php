@@ -53,9 +53,12 @@ class YamlCommand extends BaseCommand
 
         /* </code from composer global> */
 
-        $this->prepareComposerJson($input, $output);
+        $this->backupComposerJson();
 
         try {
+            $dumper = new DumpCommand();
+            $dumper->run(new StringInput(''), $output);
+
             /* <code from composer global> */
             // create new input without "yaml" command prefix
             $input = new StringInput(preg_replace('{\by(?:a(?:m(?:l?)?)?)?\b}', '', $input->__toString(), 1));
@@ -64,6 +67,10 @@ class YamlCommand extends BaseCommand
             return $this->getApplication()->run($input, $output);
             /* </code from composer global> */
         } finally {
+            if (file_exists('composer.json')) {
+                unlink('composer.json');
+            }
+
             $this->restoreComposerJson();
         }
     }
@@ -73,7 +80,7 @@ class YamlCommand extends BaseCommand
         return true;
     }
 
-    private function prepareComposerJson(InputInterface $input, OutputInterface $output)
+    private function backupComposerJson()
     {
         if (file_exists('composer.json')) {
             $this->tmpComposer = uniqid('composer.json.');
@@ -88,16 +95,10 @@ class YamlCommand extends BaseCommand
                 throw new RuntimeException('Unable to backup existing composer.json: rename failure');
             }
         }
-
-        $dumper = new DumpCommand();
-
-        $dumper->run(new StringInput(''), $output);
     }
 
     private function restoreComposerJson()
     {
-        unlink('composer.json');
-
         if ($this->tmpComposer) {
             $result = rename($this->tmpComposer, 'composer.json');
 
