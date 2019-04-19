@@ -1,0 +1,17 @@
+{
+    "name": "sandfoxme/composer-yaml",
+    "type": "library",
+    "license": "MIT",
+    "description": "Yaml support plugin for composer",
+    "keywords": [
+        "composer",
+        "yaml"
+    ],
+    "authors": [
+        {
+            "name": "Anton Smirnov",
+            "email": "sandfox@sandfox.me"
+        }
+    ],
+    "require": {}
+}
