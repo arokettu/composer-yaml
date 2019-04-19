@@ -7,7 +7,7 @@ use Symfony\Component\Yaml\Yaml;
 /**
  * @internal
  */
-class YamlHelper
+final class YamlHelper
 {
     /**
      * @param mixed $value
