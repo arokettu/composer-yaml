@@ -65,8 +65,8 @@ See LICENSE.md
 .. |Packagist|  image:: https://img.shields.io/packagist/v/sandfoxme/composer-yaml.svg
    :target: https://packagist.org/packages/sandfoxme/composer-yaml
 .. |GitHub|     image:: https://img.shields.io/badge/GitHub-composer--yaml-informational.svg?logo=github
-   :target: https://github.com/sandfoxme/php-composer-yaml
+   :target: https://github.com/sandfoxme/composer-yaml
 .. |Gitlab|     image:: https://img.shields.io/badge/Gitlab-composer--yaml-informational.svg?logo=gitlab
-   :target: https://gitlab.com/sandfox/php-composer-yaml
+   :target: https://gitlab.com/sandfox/composer-yaml
 .. |Bitbucket|  image:: https://img.shields.io/badge/Bitbucket-composer--yaml-informational.svg?logo=bitbucket
-   :target: https://bitbucket.org/sandfox/php-composer-yaml
+   :target: https://bitbucket.org/sandfox/composer-yaml
