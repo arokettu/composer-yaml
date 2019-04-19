@@ -63,8 +63,11 @@ class YamlCommand extends BaseCommand
             // create new input without "yaml" command prefix
             $input = new StringInput(preg_replace('{\by(?:a(?:m(?:l?)?)?)?\b}', '', $input->__toString(), 1));
             $this->getApplication()->resetComposer();
+            $this->getApplication()->setAutoExit(false);
 
-            return $this->getApplication()->run($input, $output);
+            $code = $this->getApplication()->run($input, $output);
+
+            $this->getApplication()->setAutoExit(true);
             /* </code from composer global> */
         } finally {
             if (file_exists('composer.json')) {
@@ -73,6 +76,8 @@ class YamlCommand extends BaseCommand
 
             $this->restoreComposerJson();
         }
+
+        return $code;
     }
 
     public function isProxyCommand()
