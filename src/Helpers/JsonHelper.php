@@ -14,9 +14,9 @@ final class JsonHelper
     {
         if (defined('JSON_THROW_ON_ERROR')) {
             // PHP 7.3+
-            return json_encode($value,  JSON_PRETTY_PRINT |  JSON_UNESCAPED_UNICODE |  JSON_THROW_ON_ERROR);
+            return json_encode($value,  JSON_PRETTY_PRINT |  JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
         } else {
-            $data = json_encode($value,  JSON_PRETTY_PRINT |  JSON_UNESCAPED_UNICODE);
+            $data = json_encode($value,  JSON_PRETTY_PRINT |  JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
             if (json_last_error() !== JSON_ERROR_NONE) {
                 throw new RuntimeException(json_last_error_msg());
             }
