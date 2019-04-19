@@ -17,7 +17,7 @@ final class YamlHelper
     {
         if (function_exists('yaml_emit')) {
             // use ext-yaml
-            return yaml_emit($value);
+            return yaml_emit($value, YAML_UTF8_ENCODING);
         } else {
             // fall back to symfony/yaml
             return Yaml::dump($value);
