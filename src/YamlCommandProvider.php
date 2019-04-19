@@ -11,6 +11,7 @@ class YamlCommandProvider implements CommandProvider
         return [
             new Commands\CreateCommand(),
             new Commands\DumpCommand(),
+            new Commands\YamlCommand(),
         ];
     }
 }
