@@ -1,3 +1,4 @@
 /.idea
 /docs/*.html
 /vendor/
+composer.lock

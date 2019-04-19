@@ -1,10 +1,11 @@
 {
     "name": "sandfoxme/composer-yaml",
-    "type": "library",
+    "type": "composer-plugin",
     "license": "MIT",
     "description": "Yaml support plugin for composer",
     "keywords": [
         "composer",
+        "composer plugin",
         "yaml"
     ],
     "authors": [
@@ -13,5 +14,24 @@
             "email": "sandfox@sandfox.me"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "SandFox\\ComposerYaml\\": "src"
+        }
+    },
+    "extra": {
+        "class": "SandFox\\ComposerYaml\\YamlPlugin"
+    },
+    "require": {
+        "symfony/yaml":         "^2|^3|^4",
+
+        "composer-plugin-api":  "^1.1",
+        "php":                  ">= 5.5"
+    },
+    "require-dev": {
+        "composer/composer": "~1.8"
+    },
+    "suggest": {
+        "ext-yaml": "*"
+    }
 }
