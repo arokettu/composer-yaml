@@ -30,7 +30,7 @@ class YamlCommand extends BaseCommand
         ));
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    public function run(InputInterface $input, OutputInterface $output)
     {
         /* <code from composer global> */
 
