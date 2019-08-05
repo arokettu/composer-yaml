@@ -34,7 +34,7 @@ The plugin adds a proxy command ``yaml`` that allows Composer to read config fro
 
 ### Documentation
 
-Read full documentation here: <https://sandfox.dev/composer-yaml.html>
+Read full documentation here: <https://sandfox.dev/php/composer-yaml.html>
 
 ## License
 
