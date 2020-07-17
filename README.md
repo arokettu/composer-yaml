@@ -4,6 +4,8 @@
 [![Packagist](https://img.shields.io/github/license/sandfoxme/composer-yaml.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
 [![Code Climate](https://img.shields.io/codeclimate/maintainability/sandfoxme/composer-yaml.svg?maxAge=2592000)](https://codeclimate.com/github/sandfoxme/composer-yaml)
 
+***The project is abandoned due to lack of interest***
+
 (Almost) real support for yaml in Composer for your local project!
 As easy as ``composer yaml update``!
 

@@ -1,7 +1,9 @@
 Composer Yaml
 #############
 
-|Packagist| |GitHub| |Gitlab| |Bitbucket|
+|Packagist| |GitLab| |GitHub| |Bitbucket| |Gitea|
+
+**The project is abandoned due to lack of interest**
 
 (Almost) real support for yaml in Composer for your local project!
 As easy as ``composer yaml update``!
@@ -63,10 +65,12 @@ See LICENSE.md
 .. _MIT License:  https://opensource.org/licenses/MIT
 
 .. |Packagist|  image:: https://img.shields.io/packagist/v/sandfoxme/composer-yaml.svg
-   :target: https://packagist.org/packages/sandfoxme/composer-yaml
-.. |GitHub|     image:: https://img.shields.io/badge/GitHub-composer--yaml-informational.svg?logo=github
-   :target: https://github.com/sandfoxme/composer-yaml
-.. |Gitlab|     image:: https://img.shields.io/badge/Gitlab-composer--yaml-informational.svg?logo=gitlab
-   :target: https://gitlab.com/sandfox/composer-yaml
-.. |Bitbucket|  image:: https://img.shields.io/badge/Bitbucket-composer--yaml-informational.svg?logo=bitbucket
-   :target: https://bitbucket.org/sandfox/composer-yaml
+   :target:     https://packagist.org/packages/sandfoxme/composer-yaml
+.. |GitHub|     image:: https://img.shields.io/badge/get%20on-GitHub-informational.svg?logo=github
+   :target:     https://github.com/arokettu/composer-yaml
+.. |GitLab|     image:: https://img.shields.io/badge/get%20on-GitLab-informational.svg?logo=gitlab
+   :target:     https://gitlab.com/sandfox/composer-yaml
+.. |Bitbucket|  image:: https://img.shields.io/badge/get%20on-Bitbucket-informational.svg?logo=bitbucket
+   :target:     https://bitbucket.org/sandfox/composer-yaml
+.. |Gitea|      image:: https://img.shields.io/badge/get%20on-Gitea-informational.svg
+   :target:     https://sandfox.org/sandfox/composer-yaml
