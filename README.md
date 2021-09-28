@@ -1,8 +1,8 @@
 # Composer Yaml
 
-[![Packagist](https://img.shields.io/packagist/v/sandfoxme/composer-yaml.svg?maxAge=2592000)](https://packagist.org/packages/sandfoxme/composer-yaml)
-[![Packagist](https://img.shields.io/github/license/sandfoxme/composer-yaml.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/sandfoxme/composer-yaml.svg?maxAge=2592000)](https://codeclimate.com/github/sandfoxme/composer-yaml)
+[![Packagist](https://img.shields.io/packagist/v/sandfoxme/composer-yaml.svg?style=flat-square)](https://packagist.org/packages/sandfoxme/composer-yaml)
+[![Packagist](https://img.shields.io/github/license/sandfoxme/composer-yaml.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/sandfoxme/composer-yaml.svg?style=flat-square)](https://codeclimate.com/github/sandfoxme/composer-yaml)
 
 ***The project is abandoned due to lack of interest***
 
@@ -13,7 +13,9 @@ As easy as ``composer yaml update``!
 
 Global installation is required
 
-    composer global require sandfoxme/composer-yaml
+```bash
+composer global require sandfoxme/composer-yaml
+```
 
 ## Usage
 
